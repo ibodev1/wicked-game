@@ -9,7 +9,7 @@
 var play_btn = document.getElementById("play-btn");
 var play_btn_text = document.getElementById("play-btn-text");
 var sound = new Howl({
-  src: ["../song/wicked-game.mp3"],
+  src: ["song/wicked-game.mp3"],
   autoplay: false,
   loop: true,
   html5: true,
