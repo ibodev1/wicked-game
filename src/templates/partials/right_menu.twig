@@ -1,0 +1,31 @@
+<div class="right">
+  <h2>Song Detail</h2>
+  <ul>
+    <li>
+      <span>Duration : <span class="inter">{{ info.duration }}</span></span>
+    </li>
+    <li>
+      <span>Number of rows in the album : <span class="inter">{{ info.number_of_rows_in_the_album }}</span></span>
+    </li>
+    <li>
+      <span>Number of awards : <span class="inter">{{ info.number_of_awards }}</span></span>
+    </li>
+    <li>
+      <span>Awards :</span>
+      <ul>
+        {% for award in info.awards %}
+        <li class="inter">{{ award.award_name }} ({{ award.award_year }})</li>
+        {% endfor %}
+      </ul>
+    </li>
+    <li>
+      <a href="/index.json" class="inter">Json File</a>
+    </li>
+    <li>
+      <a href="/index.txt" class="inter">Txt File</a>
+    </li>
+    <li>
+      <a href="/index_tr.txt" class="inter">(TR) Txt File</a>
+    </li>
+  </ul>
+</div>

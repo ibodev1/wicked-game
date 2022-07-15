@@ -1,0 +1,17 @@
+{# index.twig #}
+{% extends "layouts/master.twig" %}
+{% block content %}
+    <div class="main">
+        <h2 class="title">Lyrics</h2>
+        <div class="main_content">
+            <div class="lyrics">
+                <ul>
+                    {% for text in lyrics %}
+                        <li>{{ text }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% include "./partials/right_menu.twig" %}
+        </div>
+    </div>
+{% endblock %}

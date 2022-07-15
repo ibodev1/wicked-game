@@ -1,0 +1,35 @@
+<nav>
+  <div class="content">
+    <div class="song_content">
+      <div class="img">
+        <img src="{{ info.cover }}" alt="song cover" />
+      </div>
+      <div class="song">
+        <h1>{{ info.name }}</h1>
+        <h2>{{ info.singer }}</h2>
+        <button id="play-btn">
+          <span class="icon inter"></span>
+          <p class="inter" id="play-btn-text">Play Music</p>
+        </button>
+      </div>
+    </div>
+    <div class="song_info">
+      <ul>
+        <li>
+          <span>Release Date :</span>
+          <p class="inter">{{ info.release_date }}</p>
+        </li>
+        <li>
+          <span>Album Name :</span>
+          <p class="inter">{{ info.album_name }}</p>
+        </li>
+        <li>
+          <span>Genres :</span>
+          <p class="inter">
+            {{ info.genres }}
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
