@@ -83,14 +83,14 @@ nav {
         width: 20px;
         height: 20px;
         margin-right: 2.5px;
-        background-image: url(../images/icon/play.svg);
+        background-image: url(images/icon/play.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
       }
       &.active {
         .icon {
-          background-image: url(../images/icon/stop.svg) !important;
+          background-image: url(images/icon/stop.svg) !important;
         }
       }
     }
