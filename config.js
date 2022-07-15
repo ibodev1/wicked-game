@@ -1,45 +1,45 @@
 module.exports = {
   archive: {
-    input: "dist/**",
+    input: "docs/**",
     output: "build/",
   },
-  clean: ["dist/"],
+  clean: ["docs/"],
   images: {
     input: "src/images/**/*",
-    output: "dist/images",
+    output: "docs/images",
     watch: "src/images/**/*",
   },
   scripts: {
     input: "src/scripts/app.js",
-    output: "dist/js",
+    output: "docs/js",
     watch: "src/scripts/**/*.js",
   },
   fonts: {
     input: "src/font/**/*",
-    output: "dist/font",
+    output: "docs/font",
     watch: "src/font/**/*",
   },
   songs: {
     input: "src/song/**/*",
-    output: "dist/song",
+    output: "docs/song",
     watch: "src/song/**/*",
   },
   server: {
-    root: "dist/",
+    root: "docs/",
   },
   styles: {
     input: "src/styles/*.scss",
-    output: "dist/css",
+    output: "docs/css",
     watch: "src/styles/**/*.scss",
   },
   templates: {
     input: "src/templates/*.twig",
-    output: "dist/",
+    output: "docs/",
     watch: ["src/templates/**/*.twig", "index.json"],
   },
   data: {
     input: ["index.json", "index.txt", "index_tr.txt", "browserconfig.xml"],
-    output: "dist/",
+    output: "docs/",
     watch: ["index.json", "index.txt", "index_tr.txt", "browserconfig.xml"],
   },
 };
